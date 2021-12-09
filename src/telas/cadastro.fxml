@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controle.ControleCadastro">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="409.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="320.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.11999999731779099" blue="0.11999999731779099" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <ImageView fitHeight="400.0" fitWidth="594.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="106.0" fitWidth="180.0" layoutX="68.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="394.0" layoutY="70.0" text="CADASTRO">
+               <textFill>
+                  <RadialGradient centerX="0.22375690607734805" centerY="0.556872037914692" radius="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" opacity="0.949999988079071" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <font>
+                  <Font name="Trebuchet MS Bold" size="27.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" height="9.28" radius="1.8199999999999998" spread="1.0" width="0.0" />
+               </effect>
+            </Label>
+
+            <Button layoutX="-2.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefWidth="41.0" rotate="90.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="421.0" layoutY="356.0" mnemonicParsing="false" onAction="#cadastro" style="-fx-background-color: #ff0000;" text="Cadastrar">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fx:id="logo" fitHeight="272.0" fitWidth="363.0" layoutX="16.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="voltar" fitHeight="27.0" fitWidth="36.0" layoutX="7.0" layoutY="10.0" onMouseClicked="#voltar" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="68.0" layoutY="362.0" text="Copyright©2021, Dyas Store. ">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Label>
+            <Label layoutX="83.0" layoutY="378.0" text="Todos os direitos reservados">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="user" layoutX="382.0" layoutY="174.0" prefHeight="26.0" prefWidth="208.0" />
+            <TextField layoutX="383.0" layoutY="210.0" prefHeight="26.0" prefWidth="206.0" />
+            <PasswordField fx:id="password" layoutX="383.0" layoutY="250.0" prefHeight="27.0" prefWidth="209.0" />
+            <PasswordField fx:id="passwordTent" layoutX="418.0" layoutY="301.0" prefHeight="25.0" prefWidth="173.0" />
+            <Label layoutX="339.0" layoutY="176.0" text="Usuário:">
+               <font>
+                  <Font size="11.5" />
+               </font>
+            </Label>
+            <Label layoutX="341.0" layoutY="211.0" text="E-mail:">
+               <font>
+                  <Font size="11.5" />
+               </font>
+            </Label>
+            <Label layoutX="342.0" layoutY="254.0" text="Senha:">
+               <font>
+                  <Font size="11.5" />
+               </font>
+            </Label>
+            <Label layoutX="335.0" layoutY="306.0" text="Confirmar senha:">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

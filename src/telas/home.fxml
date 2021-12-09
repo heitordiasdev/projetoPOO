@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controle.ControleHome">
+   <effect>
+      <InnerShadow blurType="TWO_PASS_BOX" />
+   </effect>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" layoutX="2.0" layoutY="-3.0" strokeType="INSIDE" width="313.0">
+               <fill>
+                  <LinearGradient endX="0.8720379146919431" endY="0.8957345971563981" startX="0.8151658767772512">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.1742771863937378" blue="0.11999999731779099" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.8194444179534912" blue="0.8194444179534912" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <stroke>
+                  <LinearGradient endX="0.8720379146919431" endY="0.8957345971563981" startX="0.8151658767772512">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.1742771863937378" blue="0.11999999731779099" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.8194444179534912" blue="0.8194444179534912" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Rectangle>
+            <ImageView fx:id="imageView" fitHeight="272.0" fitWidth="363.0" layoutX="6.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="410.0" layoutY="74.0" text="Login" textFill="#9a4444" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="senha" layoutX="370.0" layoutY="183.0" prefHeight="25.0" prefWidth="174.0" promptText="Senha">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="abrirProdutos" layoutX="430.0" layoutY="253.0" mnemonicParsing="false" onAction="#abrirProdutos" style="-fx-background-color: #ff0000;" text="Entrar" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+               <effect>
+                  <ColorAdjust contrast="-0.06" hue="0.02" saturation="-0.24" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label ellipsisString="" layoutX="410.0" layoutY="302.0" text="Esqueceu a senha?" textFill="#0055ff" textOverrun="CENTER_WORD_ELLIPSIS" underline="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <TextField fx:id="usuario" layoutX="370.0" layoutY="138.0" prefHeight="30.0" prefWidth="174.0" promptText="Usuário">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button layoutX="5.0" layoutY="16.0" minHeight="9.0" minWidth="36.0" mnemonicParsing="false" opacity="0.0" prefHeight="35.0" prefWidth="36.0" text="exit" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button contentDisplay="CENTER" graphicTextGap="500.0" layoutX="102.0" layoutY="333.0" mnemonicParsing="false" onAction="#abrirCadastro" style="-fx-background-color: #ff0000;" text="Cadastre-se" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <TextField alignment="TOP_CENTER" disable="true" layoutX="59.0" layoutY="295.0" text="Não tem conta?">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Label layoutX="114.0" layoutY="237.0" text="\@dyas.storee">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="insta" fitHeight="18.0" fitWidth="24.0" layoutX="91.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="150.0" fitWidth="308.0" layoutX="8.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
